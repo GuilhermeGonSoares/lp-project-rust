@@ -4,6 +4,7 @@ mod controllers;
 
 use actix_web::{App, HttpServer};
 use routes::transaction_routes;
+use actix_cors::Cors;
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
